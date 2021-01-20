@@ -9,7 +9,7 @@ writer:
 reader:   
     python serM.py -p /dev/ttyUSB0 -b 57600  
  
-(the magic that allows this is the serial port initialization with the flag "exclusive=False" like that:  
+The magic that allows it is the serial port initialization with the flag "exclusive=False" like that:  
    
 ser = Serial(port, baud, write_timeout=0, inter_byte_timeout=None, exclusive=False)  
    
